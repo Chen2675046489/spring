@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springweb.mapper.Account_user">
+    <!-- id: 接口的名称； resultType：返回的类型  -->
+    <select id="get_user" resultType="com.springweb.helloworld.User">
+    select * from users_user where id = #{id}
+  </select>
+</mapper>
